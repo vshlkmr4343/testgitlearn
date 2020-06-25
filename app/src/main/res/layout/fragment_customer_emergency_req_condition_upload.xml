@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/charges_for_emergency"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_five">
+
+            <ImageView
+                android:id="@+id/req_type"
+                android:layout_width="@dimen/dp_fifty"
+                android:layout_height="@dimen/dp_fifty"
+                android:src="@drawable/icon_plum" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="@dimen/dp_five"
+                android:text=""
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_twenty"
+            android:paddingTop="@dimen/dp_five"
+            android:paddingRight="@dimen/dp_twenty"
+            android:paddingBottom="@dimen/dp_twenty">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="@dimen/dp_five"
+                android:text=""
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond" />
+
+            <LinearLayout
+                android:id="@+id/image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading"
+                android:layout_marginTop="@dimen/dp_fifteen"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="@dimen/dp_two"
+                    android:layout_weight="0.5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_image" />
+
+                <ImageView
+                    android:id="@+id/image_2"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="@dimen/dp_two"
+                    android:layout_weight="0.5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_image" />
+            </LinearLayout>
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/cancelRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tech_bg_rect"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_twenty"
+                android:paddingTop="@dimen/dp_five"
+                android:paddingRight="@dimen/dp_twenty"
+                android:paddingBottom="@dimen/dp_five"
+                android:text="Cancel Requirement"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/charges_for_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?colorPrimaryDark"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_five"
+        android:paddingTop="@dimen/dp_eight"
+        android:paddingRight="@dimen/dp_five"
+        android:paddingBottom="@dimen/dp_eight"
+        android:text=""
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/sp_smallxx"
+        tradiuus:customFont="@string/cond" />
+</RelativeLayout>
+
+

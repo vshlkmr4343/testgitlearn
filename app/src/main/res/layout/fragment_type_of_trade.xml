@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_view2"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/signup_icon"
+            android:drawablePadding="@dimen/dp_five"
+            android:gravity="left|center"
+            android:padding="@dimen/dp_five"
+            android:text="Please Fill  Up The Details"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/text_img1_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:padding="@dimen/dp_five"
+                android:text="Select Your Type Of Trade"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+            <ListView
+                android:id="@+id/list_select_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:paddingLeft="@dimen/dp_fifty"
+                android:paddingRight="@dimen/dp_thirtyfive"
+                android:scrollbarThumbVertical="@drawable/scrollbar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_view"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_five"
+            android:text="Tradiuus provides both emergency and estimate services. Please agree to provider both"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_smallxx"
+            tradiuus:customFont="@string/cond" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/fragment_trade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/checkbox_trade" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp_five"
+                android:text="Agree"
+                android:textColor="@color/app_main_color_700"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/frag_trade_btn_back"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_margin="@dimen/dp_eight"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_weight="0.5"
+            android:background="@drawable/blank_back_btn"
+            android:gravity="center"
+            android:text="BACK"
+            android:textColor="@color/app_main_color_700"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/frag_trade_btn_proceed"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_margin="@dimen/dp_eight"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_weight="0.5"
+            android:background="@drawable/blank_next_btn"
+            android:gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

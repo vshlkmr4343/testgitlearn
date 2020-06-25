@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:clickable="false"
+    android:onClick="@null"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frag_btn_update"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/image_upload_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/signup_icon"
+            android:drawablePadding="@dimen/dp_five"
+            android:gravity="left|center"
+            android:padding="@dimen/dp_five"
+            android:text="Update Availability"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_thirty"
+                android:paddingTop="@dimen/dp_twelve"
+                android:paddingRight="@dimen/dp_thirty"
+                android:paddingBottom="@dimen/dp_twelve">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingTop="@dimen/dp_five"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_five"
+                    android:text="Few More Details"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond_bold" />
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingTop="@dimen/dp_five"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_five"
+                    android:text="How many trucks do you have available to Tradiuus? "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:layout_marginBottom="@dimen/dp_ten"
+                    android:background="@drawable/text_field">
+
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/btn_negetive"
+                        android:layout_width="@dimen/dp_forty"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/p_button_bg"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="40sp"
+                        tradiuus:customFont="@string/cond_light" />
+
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/edit_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/btn_posetive"
+                        android:layout_toRightOf="@+id/btn_negetive"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:lines="0"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumxx"
+                        tradiuus:customFont="@string/cond_light" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/btn_posetive"
+                        android:layout_width="@dimen/dp_forty"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/p_button_bg"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="40sp"
+                        tradiuus:customFont="@string/cond_light" />
+
+                </RelativeLayout>
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingTop="@dimen/dp_five"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_five"
+                    android:text="Your Availability Hours"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_five">
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/dp_five"
+                        android:text="From"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/time_from"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_five"
+                        android:text="7.30 AM"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_bold" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/time_from_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="right|center_vertical"
+                        android:padding="@dimen/dp_five"
+                        android:text="EDIT"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_five">
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/dp_five"
+                        android:text="To"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/time_to"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_five"
+                        android:text="10.00 PM"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_bold" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/time_to_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="right|center_vertical"
+                        android:padding="@dimen/dp_five"
+                        android:text="EDIT"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_bold" />
+
+                </LinearLayout>
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingTop="@dimen/dp_five"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_five"
+                    android:text="Enter upto 5 different Zip Codes that you prefer to be detected and work in"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond" />
+
+
+                <LinearLayout
+                    android:id="@+id/zip_code_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.tradiuus.widgets.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/text_field"
+                        android:gravity="left|center_vertical"
+                        android:hint="Zip Code 1"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/dp_five"
+                        android:paddingTop="@dimen/dp_ten"
+                        android:paddingRight="@dimen/dp_five"
+                        android:paddingBottom="@dimen/dp_ten"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_light" />
+
+                    <com.tradiuus.widgets.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp_five"
+                        android:background="@drawable/text_field"
+                        android:gravity="left|center_vertical"
+                        android:hint="Zip Code 2"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/dp_five"
+                        android:paddingTop="@dimen/dp_ten"
+                        android:paddingRight="@dimen/dp_five"
+                        android:paddingBottom="@dimen/dp_ten"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_light" />
+
+                    <com.tradiuus.widgets.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp_five"
+                        android:background="@drawable/text_field"
+                        android:gravity="left|center_vertical"
+                        android:hint="Zip Code 3"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/dp_five"
+                        android:paddingTop="@dimen/dp_ten"
+                        android:paddingRight="@dimen/dp_five"
+                        android:paddingBottom="@dimen/dp_ten"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_light" />
+
+                    <com.tradiuus.widgets.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp_five"
+                        android:background="@drawable/text_field"
+                        android:gravity="left|center_vertical"
+                        android:hint="Zip Code 4"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/dp_five"
+                        android:paddingTop="@dimen/dp_ten"
+                        android:paddingRight="@dimen/dp_five"
+                        android:paddingBottom="@dimen/dp_ten"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_light" />
+
+                    <com.tradiuus.widgets.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp_five"
+                        android:background="@drawable/text_field"
+                        android:gravity="left|center_vertical"
+                        android:hint="Zip Code 5"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/dp_five"
+                        android:paddingTop="@dimen/dp_ten"
+                        android:paddingRight="@dimen/dp_five"
+                        android:paddingBottom="@dimen/dp_ten"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_light" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/frag_btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_eight"
+        android:layout_marginTop="@dimen/dp_five"
+        android:layout_weight="0.5"
+        android:background="@drawable/blank_next_btn"
+        android:gravity="center"
+        android:text="UPDATE"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond_light" />
+
+
+</RelativeLayout>
+
+

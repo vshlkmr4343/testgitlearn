@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_thirty"
+        android:background="@drawable/dialog_price_rect"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/dialog_change_editprice_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:padding="@dimen/dp_five"
+            android:text="Do you really want to CANCEL this contractor?"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_bold" />
+
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:orientation="vertical">
+
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/btn_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_thirty"
+                android:layout_margin="@dimen/dp_five"
+                android:background="@drawable/button_rect_select"
+                android:gravity="center"
+                android:text="Yes, Show others trades"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/btn_skip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_thirty"
+                android:layout_margin="@dimen/dp_five"
+                android:background="@drawable/button_rect"
+                android:gravity="center"
+                android:text="CANCEL"
+                android:textColor="@color/app_main_color_700"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

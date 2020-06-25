@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        tools:openDrawer="end">
+
+
+        <!-- Main View-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_main_color_700"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:layout_marginRight="@dimen/dp_five"
+                    android:layout_marginBottom="@dimen/dp_five"
+                    android:src="@drawable/top_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_five"
+                    android:src="@drawable/top_logo" />
+
+                <ImageView
+                    android:id="@+id/action_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_ten"
+                    android:src="@drawable/ham_menu" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    layout="@layout/fragment_customer_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:id="@+id/fragmentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="@null"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Main View -->
+
+        <include
+            android:id="@+id/nav_view"
+            layout="@layout/include_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <include
+        android:id="@+id/more_trade_dialog"
+        layout="@layout/inflate_more_trade_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="@null"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/reviewForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

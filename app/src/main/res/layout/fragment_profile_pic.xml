@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/signup_icon"
+            android:drawablePadding="@dimen/dp_five"
+            android:gravity="left|center"
+            android:padding="@dimen/dp_five"
+            android:text="Upload Profile Picture"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/dp_eight"
+            android:text="All contractor have a technician profile created for themselves under them which can be managed from the setting later on. Please upload a profile picture which will be used on your technician profile. This help you get qualified leads from Tradiuus."
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/user_pic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/top_layout"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_image" />
+
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/frag_profile_pic_btn_skip"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_margin="@dimen/dp_eight"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_weight="0.5"
+            android:background="@drawable/blank_back_btn"
+            android:gravity="center"
+            android:text="SKIP"
+            android:textColor="@color/app_main_color_700"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/frag_profile_pic_btn_proceed"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_margin="@dimen/dp_eight"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_weight="0.5"
+            android:background="@drawable/blank_next_btn"
+            android:gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+    </LinearLayout>
+
+</RelativeLayout>

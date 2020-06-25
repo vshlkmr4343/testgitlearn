@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:onClick="@null"
+    android:orientation="vertical">
+
+    <com.tradiuus.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#38C7B5"
+        android:drawableLeft="@drawable/signup_icon"
+        android:drawablePadding="@dimen/dp_five"
+        android:gravity="left|center"
+        android:padding="@dimen/dp_five"
+        android:text="Update Auto Response Time "
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_mediumx"
+        tradiuus:customFont="@string/cond" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_five"
+        android:paddingBottom="@dimen/dp_five">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/estimate_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="@dimen/dp_five"
+                android:text="You are required to serponse within a sepecific time. The customer shall have you cell number may test you"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginLeft="@dimen/dp_sixty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:layout_marginRight="@dimen/dp_sixty"
+                android:layout_marginBottom="@dimen/dp_ten"
+                android:background="@drawable/text_field">
+
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/estimate_btn_negetive"
+                    android:layout_width="@dimen/dp_forty"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/p_button_bg"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_largexxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/estimate_edit_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/estimate_btn_posetive"
+                    android:layout_toRightOf="@+id/estimate_btn_negetive"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Minute"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:textColor="?colorPrimaryDark"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/estimate_btn_posetive"
+                    android:layout_width="@dimen/dp_forty"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/p_button_bg"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_largexxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+
+            </RelativeLayout>
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="@dimen/dp_five"
+                android:text="You are required to response within a specific time. The customer shall have your cell number and may text you."
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond" />
+
+        </LinearLayout>
+
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/estimate_btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_thirty"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_marginRight="@dimen/dp_thirty"
+            android:layout_marginBottom="@dimen/dp_ten"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="UPDATE"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumx"
+            android:visibility="visible"
+            tradiuus:customFont="@string/cond_light" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <com.tradiuus.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072A8"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="HELP"
+        android:textColor="#25B7D3"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dp_forty"
+            android:layout_marginRight="@dimen/dp_forty"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/btn_tutorial"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="TUTORIALS"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/btn_faq"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="FAQ"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/btn_videos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="VIDEOS"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <!--  <android.support.v4.view.ViewPager
+                  android:id="@+id/viewpager"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_above="@+id/indicator"
+                  android:background="@color/app_main_color_700" />
+
+              <ImageView
+                  android:id="@+id/pager_back"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="@dimen/dp_five"
+                  android:padding="@dimen/dp_ten"
+                  android:src="@drawable/previnactive" />
+
+              <ImageView
+                  android:id="@+id/pager_next"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="@dimen/dp_five"
+                  android:padding="@dimen/dp_ten"
+                  android:src="@drawable/nextinactive" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45"
+            android:orientation="vertical">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/signup_icon"
+                android:drawablePadding="@dimen/dp_five"
+                android:gravity="left|center"
+                android:padding="@dimen/dp_five"
+                android:text="Your suggestion is valuable to us"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_thirtyfive"
+                android:layout_marginRight="@dimen/dp_thirtyfive">
+
+                <com.tradiuus.widgets.CustomEditText
+                    android:id="@+id/userFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/btn_submit"
+                    android:background="@drawable/help_edit_rec"
+                    android:gravity="left|top"
+                    android:hint="Your suggestion"
+                    android:padding="@dimen/dp_five"
+                    android:textColor="@color/app_main_color_700"
+                    android:textSize="@dimen/sp_medium"
+                    tradiuus:customFont="@string/cond" />
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_thirty"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:layout_marginBottom="@dimen/dp_five"
+                    android:background="@drawable/blank_btn"
+                    android:gravity="center"
+                    android:text="SUBMIT"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

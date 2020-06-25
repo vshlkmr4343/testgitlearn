@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_main_color_700">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:layout_marginTop="@dimen/dp_five"
+                android:layout_marginRight="@dimen/dp_five"
+                android:layout_marginBottom="@dimen/dp_five"
+                android:src="@drawable/top_icon" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:src="@drawable/top_logo" />
+        </LinearLayout>
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/donearrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_ten"
+            android:gravity="center"
+            android:padding="@dimen/dp_five"
+            android:text="Done"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_yellow_800"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_ten"
+                    android:text="Review"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_technician"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_five">
+
+                    <ImageView
+                        android:id="@+id/service_logo"
+                        android:layout_width="@dimen/dp_forty"
+                        android:layout_height="@dimen/dp_seventy"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/technician_avt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_five">
+
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/service_contractor_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_two"
+                        android:gravity="left"
+                        android:text="John Smith"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_smallxx"
+                        tradiuus:customFont="@string/cond_bold" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/service_job_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_two"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Job Id: PJ18823   "
+                        android:textColor="#868686"
+                        android:textSize="@dimen/sp_smallxx"
+                        tradiuus:customFont="@string/cond" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/service_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Plumber for Colgged Toilet Bowl"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_smallxx"
+                        tradiuus:customFont="@string/cond" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:id="@+id/service_ph_no"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_two"
+                            android:layout_weight="0.5"
+                            android:drawableLeft="@drawable/menu_phone_icon"
+                            android:drawablePadding="@dimen/dp_two"
+                            android:gravity="left|center_vertical"
+                            android:maxLines="1"
+                            android:text="(+1)43784 3748"
+                            android:textColor="?colorPrimaryDark"
+                            android:textSize="@dimen/sp_smallxx"
+                            tradiuus:customFont="@string/cond" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_two"
+                            android:layout_weight="0.35"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/service_cost_icon"
+                                android:layout_width="@dimen/dp_ten"
+                                android:layout_height="@dimen/dp_ten"
+                                android:src="@drawable/dollar" />
+
+                            <com.tradiuus.widgets.CustomTextView
+                                android:id="@+id/service_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_two"
+                                android:gravity="left|center_vertical"
+                                android:maxLines="1"
+                                android:text="5"
+                                android:textColor="?colorPrimaryDark"
+                                android:textSize="@dimen/sp_smallxx"
+                                tradiuus:customFont="@string/cond" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_two"
+                            android:layout_weight="0.15"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/service_rating_icon"
+                                android:layout_width="@dimen/dp_ten"
+                                android:layout_height="@dimen/dp_ten"
+                                android:src="@drawable/ratingactive" />
+
+                            <com.tradiuus.widgets.CustomTextView
+                                android:id="@+id/service_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_two"
+                                android:gravity="left|center_vertical"
+                                android:maxLines="1"
+                                android:text="5"
+                                android:textColor="?colorPrimaryDark"
+                                android:textSize="@dimen/sp_smallx"
+                                tradiuus:customFont="@string/cond" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_two"
+                        android:orientation="horizontal">
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Booked: "
+                            android:textColor="?colorPrimaryDark"
+                            android:textSize="@dimen/sp_smallxx"
+                            tradiuus:customFont="@string/cond" />
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:id="@+id/service_booked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="17 June 2019, 04.30 PM"
+                            android:textColor="?colorPrimaryDark"
+                            android:textSize="@dimen/sp_smallxx"
+                            tradiuus:customFont="@string/cond_bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_two"
+                        android:orientation="horizontal">
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Work Status: "
+                            android:textColor="?colorPrimaryDark"
+                            android:textSize="@dimen/sp_smallxx"
+                            tradiuus:customFont="@string/cond" />
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:id="@+id/service_work_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="Not Completed Yet"
+                            android:textColor="?colorPrimaryDark"
+                            android:textSize="@dimen/sp_smallxx"
+                            tradiuus:customFont="@string/cond_bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_two"
+                android:background="@color/md_grey_300" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_ten">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="Please Rate This Contractor"
+                    android:textColor="?colorPrimaryDark"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_ten"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Overall"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rating_a" />
+
+                    <RatingBar
+                        android:id="@+id/ratting_overall"
+                        style="@style/custom_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_five"
+                        android:layout_marginRight="@dimen/dp_fifteen"
+                        android:numStars="4"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Price"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rating_a" />
+
+                    <RatingBar
+                        android:id="@+id/ratting_price"
+                        style="@style/custom_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_five"
+                        android:layout_marginRight="@dimen/dp_fifteen"
+                        android:numStars="4"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Quality"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rating_a" />
+
+                    <RatingBar
+                        android:id="@+id/ratting_quality"
+                        style="@style/custom_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_five"
+                        android:layout_marginRight="@dimen/dp_fifteen"
+                        android:numStars="4"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Time lines"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rating_a" />
+
+                    <RatingBar
+                        android:id="@+id/ratting_timelines"
+                        style="@style/custom_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_five"
+                        android:layout_marginRight="@dimen/dp_fifteen"
+                        android:numStars="4"
+                        android:rating="0"
+                        android:stepSize="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Professional"
+                        android:textColor="?colorPrimaryDark"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rating_a" />
+
+                    <RatingBar
+                        android:id="@+id/ratting_professional"
+                        style="@style/custom_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_five"
+                        android:layout_marginRight="@dimen/dp_fifteen"
+                        android:numStars="4"
+                        android:rating="0"
+                        android:stepSize="1" />
+                </LinearLayout>
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_ten"
+                    android:gravity="left"
+                    android:text="Please Share Your Valuable Thoughts about the Contractor"
+                    android:textColor="?colorPrimaryDark"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond" />
+
+                <com.tradiuus.widgets.CustomEditText
+                    android:id="@+id/valuableThought"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="@dimen/dp_twenty"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:layout_marginRight="@dimen/dp_twenty"
+                    android:layout_marginBottom="@dimen/dp_twenty"
+                    android:background="@drawable/dialog_rect"
+                    android:gravity="left|top"
+                    android:text=""
+                    android:textColor="?colorPrimaryDark"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

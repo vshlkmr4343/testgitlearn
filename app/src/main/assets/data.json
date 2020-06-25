@@ -1,0 +1,616 @@
+{
+  "status": "1",
+  "message": "Job has been assigned successfully!",
+  "job_info": {
+    "job_id": "801",
+    "service_job_id": "59671834",
+    "job_name": "BW21345",
+    "job_cost": "0",
+    "geo_job": "No",
+    "geo_job_user_id": "0",
+    "geo_job_user_type": "0",
+    "job_status": "1",
+    "job_review": {
+      "overall": 0,
+      "price": 0,
+      "quantity": 0,
+      "timeliness": 0,
+      "professionalism": 0,
+      "review": ""
+    },
+    "job_rating": 0,
+    "images": [],
+    "created_on": "1573785977",
+    "updated_on": "1573785977",
+    "service_type": "1",
+    "job_trade": {
+      "trade_id": "13",
+      "trade_name": "Plumber",
+      "map_image": "http://app.tradiuus.com/app/api/v1.0/upload/trades_icons/onmap/20170811110704plumbers.png",
+      "service": {
+        "service_id": "33",
+        "service_name": "Low Water Pressure",
+        "service_question": [
+          {
+            "question_id": "51",
+            "option_id": "207",
+            "question": "Where do you have this Low Water Pressure?",
+            "option": "At the Main line"
+          },
+          {
+            "question_id": "52",
+            "option_id": "215",
+            "question": "What caused the Low water pressure?",
+            "option": "Caused by Accident"
+          }
+        ]
+      }
+    },
+    "technician": [
+      {
+        "technician_id": "267",
+        "technician_name": "Contractor Name",
+        "technician_profile": "http://app.tradiuus.com/app/api/v1.0/upload/profilepicture/20190630181830photo.jpeg",
+        "technician_mobile": "(852) 366-9841",
+        "technician_message": "Hi, I'm Contractor Name and I shall become available in 30 min. to resolve your Low Water Pressure problem.",
+        "technician_latitude": "22.72457104",
+        "technician_longitude": "88.37624776",
+        "contractor_details": {
+          "user_type": "2",
+          "user_id": "536",
+          "contractor_id": "151",
+          "status": "1",
+          "profile_available": "1",
+          "company_name": "Company Name",
+          "overall_rating": 3,
+          "contact_person": "Contractor Name",
+          "email_id": "contractor@test.com",
+          "device_token": "",
+          "device_type": "",
+          "mobile_number": "(852) 366-9841",
+          "website_url": "tradiuus.com",
+          "license_question_id": 3,
+          "license": "3",
+          "license_number": "6774324",
+          "gl_insurance_question_id": 4,
+          "gl_insurance": "5",
+          "wc_insurance_question_id": 5,
+          "wc_insurance": "7",
+          "images": {
+            "generic_insurance_img": "http://app.tradiuus.com/app/api/v1.0/upload/document/20181221123726generic_insurance_img.jpeg",
+            "trade_license_img": "",
+            "company_logo": ""
+          },
+          "video_url": "",
+          "trade": [
+            {
+              "trade_id": "13",
+              "trade_name": "Plumber",
+              "emergency_services": [
+                {
+                  "service_id": "24",
+                  "service_name": "Clogged Drain",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "25",
+                  "service_name": "Clogged Main",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "26",
+                  "service_name": "Clogged Sewer",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "27",
+                  "service_name": "Clogged Toilet Bowl",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "28",
+                  "service_name": "Dripping Faucet",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "29",
+                  "service_name": "Broken fixture",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "30",
+                  "service_name": "Frozen Pipes",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "31",
+                  "service_name": "Waste Smells",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "32",
+                  "service_name": "Overflowing Toilet Tank",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "33",
+                  "service_name": "Low Water Pressure",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "62",
+                  "service_name": "Other",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "225",
+                  "service_name": "Replacement of Hot Water Tank",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "226",
+                  "service_name": "Damaged Sump / Well Pump",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "227",
+                  "service_name": " Damaged Sewerage Pump",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                }
+              ],
+              "emergency_rating": 2.5,
+              "emergency_jobs_review": [
+                {
+                  "contractor_id": "151",
+                  "job_id": "758",
+                  "customer_id": "135",
+                  "customer_name": "John Smith",
+                  "job_review": "Thank you",
+                  "job_rating": "5"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "761",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "Thank you",
+                  "job_rating": "5"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "765",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "",
+                  "job_rating": "1"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "766",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "",
+                  "job_rating": "1"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "768",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "",
+                  "job_rating": "1"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "769",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "Test review",
+                  "job_rating": "4"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "794",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "",
+                  "job_rating": "1"
+                }
+              ],
+              "estimate_services": [
+                {
+                  "service_id": "209",
+                  "service_name": "Kitchen Renovation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "214",
+                  "service_name": "Bath Renovation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "215",
+                  "service_name": "Filtration System Installation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "216",
+                  "service_name": "Sump Pump System Installation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "217",
+                  "service_name": "Laundry Piping Installation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "218",
+                  "service_name": "Dryer Gas Piping Installation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "219",
+                  "service_name": "Fireplace Gas Piping Installation ",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "220",
+                  "service_name": "Stove / Oven Gas Piping Installation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "221",
+                  "service_name": "Outdoor Firepit Piping Installation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "222",
+                  "service_name": "Outdoor Spigot Piping Installation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "223",
+                  "service_name": "Slop Sink Piping Installation",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "224",
+                  "service_name": "Replacement of Hot Water Heater",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "228",
+                  "service_name": "Replacement of Sump Pump",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "261",
+                  "service_name": "Garbage Disposal",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                },
+                {
+                  "service_id": "271",
+                  "service_name": "Other",
+                  "price_min": "5",
+                  "price_max": "7",
+                  "job_time": "105"
+                }
+              ],
+              "estimate_rating": 2.8,
+              "estimate_jobs_review": [
+                {
+                  "contractor_id": "151",
+                  "job_id": "760",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "Nice work..",
+                  "job_rating": "4"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "762",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "Thanks for great work.",
+                  "job_rating": "5"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "763",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "Very good service",
+                  "job_rating": "5"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "764",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "",
+                  "job_rating": "1"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "767",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "",
+                  "job_rating": "1"
+                },
+                {
+                  "contractor_id": "151",
+                  "job_id": "791",
+                  "customer_id": "140",
+                  "customer_name": "Test Asif",
+                  "job_review": "",
+                  "job_rating": "1"
+                }
+              ]
+            }
+          ],
+          "total_technicians_question_id": 6,
+          "total_technicians": "2",
+          "background_check_question_id": 7,
+          "background_check": "11",
+          "technicians": [
+            {
+              "user_id": "537",
+              "technician_id": "267",
+              "name": "Contractor Name",
+              "mobile": "+12093480404",
+              "email": "contractor@test.com",
+              "status": "1"
+            },
+            {
+              "user_id": "673",
+              "technician_id": "324",
+              "name": "Test Technician",
+              "mobile": "+18053675837",
+              "email": "test_technician@gmail.com",
+              "status": "1"
+            },
+            {
+              "user_id": "674",
+              "technician_id": "325",
+              "name": "Test Technician",
+              "mobile": "+13235463078",
+              "email": "test@gmail.com",
+              "status": "1"
+            }
+          ],
+          "available_trucks": "1",
+          "business_start_time": "6.00 AM",
+          "business_end_time": "12.00 PM",
+          "zip_codes": [
+            "700117"
+          ],
+          "emergency_auto_response_time": "30",
+          "estimate_auto_response_time": "30",
+          "geo_jobs": [
+            {
+              "job_id": "762",
+              "job_name": "PI64327",
+              "job_cost": "0",
+              "geo_job": "Yes",
+              "geo_job_user_id": "267",
+              "geo_job_user_type": "3",
+              "job_status": "5",
+              "job_review": {
+                "overall": "5",
+                "price": "5",
+                "quality": "5",
+                "timeliness": "5",
+                "professionalism": "5",
+                "review": "Thanks for great work."
+              },
+              "job_rating": 5,
+              "created_on": "1560753011",
+              "updated_on": "1560760572",
+              "service_type": "2",
+              "job_trade": {
+                "trade_id": "13",
+                "trade_name": "Plumber",
+                "map_image": "http://app.tradiuus.com/app/api/v1.0/upload/trades_icons/onmap/20170811110704plumbers.png",
+                "service": {
+                  "service_id": "214",
+                  "service_name": "Bath Renovation"
+                }
+              },
+              "place_details": {
+                "place_id": "",
+                "building_name": "",
+                "address": "kolkata",
+                "city": "",
+                "lat": "22.71754370",
+                "long": "88.38349660",
+                "status": "",
+                "added_on": "",
+                "updated_on": ""
+              }
+            },
+            {
+              "job_id": "761",
+              "job_name": "ER50417",
+              "job_cost": "0",
+              "geo_job": "Yes",
+              "geo_job_user_id": "267",
+              "geo_job_user_type": "3",
+              "job_status": "5",
+              "job_review": {
+                "overall": "5",
+                "price": "5",
+                "quality": "5",
+                "timeliness": "5",
+                "professionalism": "5",
+                "review": "Thank you"
+              },
+              "job_rating": 5,
+              "created_on": "1560752782",
+              "updated_on": "1561019774",
+              "service_type": "1",
+              "job_trade": {
+                "trade_id": "13",
+                "trade_name": "Plumber",
+                "map_image": "http://app.tradiuus.com/app/api/v1.0/upload/trades_icons/onmap/20170811110704plumbers.png",
+                "service": {
+                  "service_id": "28",
+                  "service_name": "Dripping Faucet"
+                }
+              },
+              "place_details": {
+                "place_id": "",
+                "building_name": "",
+                "address": "kolkata",
+                "city": "",
+                "lat": "22.71754370",
+                "long": "88.38349660",
+                "status": "",
+                "added_on": "",
+                "updated_on": ""
+              }
+            },
+            {
+              "job_id": "760",
+              "job_name": "HT28970",
+              "job_cost": "0",
+              "geo_job": "Yes",
+              "geo_job_user_id": "267",
+              "geo_job_user_type": "3",
+              "job_status": "5",
+              "job_review": {
+                "overall": "4",
+                "price": "4",
+                "quality": "4",
+                "timeliness": "4",
+                "professionalism": "4",
+                "review": "Nice work.."
+              },
+              "job_rating": 4,
+              "created_on": "1560751557",
+              "updated_on": "1560756421",
+              "service_type": "2",
+              "job_trade": {
+                "trade_id": "13",
+                "trade_name": "Plumber",
+                "map_image": "http://app.tradiuus.com/app/api/v1.0/upload/trades_icons/onmap/20170811110704plumbers.png",
+                "service": {
+                  "service_id": "209",
+                  "service_name": "Kitchen Renovation"
+                }
+              },
+              "place_details": {
+                "place_id": "",
+                "building_name": "",
+                "address": "kolkata",
+                "city": "",
+                "lat": "22.71754370",
+                "long": "88.38349660",
+                "status": "",
+                "added_on": "",
+                "updated_on": ""
+              }
+            },
+            {
+              "job_id": "758",
+              "job_name": "BL29816",
+              "job_cost": "0",
+              "geo_job": "Yes",
+              "geo_job_user_id": "267",
+              "geo_job_user_type": "3",
+              "job_status": "5",
+              "job_review": {
+                "overall": "5",
+                "price": "4",
+                "quality": "5",
+                "timeliness": "5",
+                "professionalism": "5",
+                "review": "Thank you"
+              },
+              "job_rating": 5,
+              "created_on": "1560665212",
+              "updated_on": "1560667204",
+              "service_type": "1",
+              "job_trade": {
+                "trade_id": "13",
+                "trade_name": "Plumber",
+                "map_image": "http://app.tradiuus.com/app/api/v1.0/upload/trades_icons/onmap/20170811110704plumbers.png",
+                "service": {
+                  "service_id": "24",
+                  "service_name": "Clogged Drain"
+                }
+              },
+              "place_details": {
+                "place_id": "",
+                "building_name": "",
+                "address": "Kolkata",
+                "city": "",
+                "lat": "22.71754370",
+                "long": "88.38349660",
+                "status": "",
+                "added_on": "",
+                "updated_on": ""
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

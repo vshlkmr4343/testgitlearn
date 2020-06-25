@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_forty"
+        android:layout_marginTop="@dimen/dp_ten"
+        android:layout_marginRight="@dimen/dp_forty"
+        android:background="@drawable/dialog_price_rect"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/btn_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="TUTORIALS"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_bold" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/btn_faq"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_five"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="FAQ"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_bold" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/btn_videos"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_five"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="VIDEOS"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_bold" />
+
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_twenty"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="CANCEL"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_bold" />
+    </LinearLayout>
+</LinearLayout>

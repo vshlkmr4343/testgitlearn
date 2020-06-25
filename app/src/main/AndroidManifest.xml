@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tradiuus">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- declare storage, camera and audio permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".TradiuusApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:name=".network.GPSTracker"
+            android:enabled="true" />
+        <service
+            android:name=".network.FindTechnicians"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- Google Notification -->
+        <service
+            android:name=".notification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- Google Notification -->
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.CustomerSignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorSignupActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.CustomerDashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorDashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorMyServicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorProfileUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorEmergencyRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorEstimateRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorLuxuryBuildingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TechnicianDashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TechnicianEmergencyRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TechnicianEstimateRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TechnicianLuxuryBuildingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TechnicianSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CustomerEmergencyCaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CustomerEstimateCaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CustomerContractorDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CustomerEmergencyReqDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CustomerEstimateReqDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CustomerFindEmergencyTechnicianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CustomerFindEstimateTechnicianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CustomerJobHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContractorVideoRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TutorialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ActivityWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".helper.imagepicker.ImageSelectActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

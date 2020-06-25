@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <com.tradiuus.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072A8"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="PROMOTIONS"
+        android:textColor="#25B7D3"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond" />
+
+    <com.tradiuus.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dp_ten"
+        android:text="Launching offer from Tradiuus"
+        android:textColor="@color/md_grey_600"
+        android:textSize="@dimen/sp_medium"
+        tradiuus:customFont="@string/cond_bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/promotions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/dp_five"
+            android:fadingEdge="none"
+            android:padding="@dimen/dp_ten"
+            android:scrollbarThumbVertical="@drawable/scrollbar" />
+
+        <ProgressBar
+            android:id="@+id/pg_dialog"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

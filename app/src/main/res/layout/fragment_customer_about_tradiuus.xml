@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <com.tradiuus.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072A8"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="ABOUT TRADIUUS"
+        android:textColor="#25B7D3"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ProgressBar
+            android:id="@+id/pg_dialog"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

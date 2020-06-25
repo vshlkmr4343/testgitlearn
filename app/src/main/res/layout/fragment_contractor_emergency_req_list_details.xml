@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/inflate_emergency_req_list_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/md_grey_600" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_five">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="Address"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/service_man_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_two"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="unitech build gate 2 new town"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="Job Details:"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/service_job_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_two"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="unitech build gate 2 new town"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond" />
+
+
+            <LinearLayout
+                android:id="@+id/service_item"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"/>
+
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="Images"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/service_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:scrollbarThumbVertical="@drawable/scrollbar" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

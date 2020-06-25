@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_top_header_contractor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.tradiuus.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072A8"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="MY PROFILE"
+        android:textColor="#25B7D3"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_forty"
+            android:layout_marginRight="@dimen/dp_forty"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/setting_btn_compnay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="UPDATE COMPANY INFO"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/setting_btn_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="UPDATE LOGO &amp; LICENSE"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/setting_btn_tech"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="UPDATE TECHNICIANS DETAILS"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/setting_btn_area"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="SET AVAILABLE AREA &amp; HOURS"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/setting_btn_credit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="SET CREDIT CARD INFO"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/setting_btn_video"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="PROFILE VIDEO"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

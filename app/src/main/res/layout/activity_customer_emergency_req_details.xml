@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/include_top_header_contractor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F86A54"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_twenttfive"
+                android:layout_height="@dimen/dp_twenttfive"
+                android:src="@drawable/emergencyheader" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp_ten"
+                android:text="EMERGENCY REQUESTS"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond_bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_message"
+                tools:context="com.tradiuus.activities.CustomerEmergencyReqDetailActivity" />
+
+            <LinearLayout
+                android:id="@+id/layout_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tech_layout"
+                android:background="@color/md_blue_A400"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_five">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MESSAGE"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_smallxx"
+                    tradiuus:customFont="@string/cond" />
+
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_two"
+                    android:text="Hi, I'm Contarctor Name and I shall be availabel in 30 min to resolve your water pressure isssue."
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_smallx"
+                    tradiuus:customFont="@string/cond" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_twenty"
+                            android:layout_height="@dimen/dp_twenty"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/cust_phone" />
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:id="@+id/phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_five"
+                            android:gravity="left"
+                            android:text="(801) 1513 15616"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="@dimen/sp_smallx"
+                            tradiuus:customFont="@string/cond_light" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/lc_attachment"
+                            android:layout_width="@dimen/dp_twenty"
+                            android:layout_height="@dimen/dp_twenty"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/attachment" />
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:id="@+id/license"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_five"
+                            android:gravity="left"
+                            android:text="License"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="@dimen/sp_smallx"
+                            tradiuus:customFont="@string/cond_light" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_twenty"
+                            android:layout_height="@dimen/dp_twenty"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/cust_availabletime" />
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:id="@+id/time_mage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_five"
+                            android:gravity="left"
+                            android:text="08.25 PM"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="@dimen/sp_smallx"
+                            tradiuus:customFont="@string/cond_light" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/tech_layout"
+                layout="@layout/inflate_customer_emg_request_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <!--layout="@layout/inflate_req_cancel_dialog"-->
+</RelativeLayout>

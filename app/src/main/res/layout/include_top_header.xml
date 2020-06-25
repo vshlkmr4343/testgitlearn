@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_color_700"
+    android:padding="@dimen/dp_five">
+
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="Help"
+        android:textColor="#FACA1A"
+        android:textSize="@dimen/sp_mediumxx"
+        android:visibility="invisible"
+        tradiuus:customFont="@string/cond" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_five"
+            android:src="@drawable/top_logo" />
+    </LinearLayout>
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="Cancel"
+        android:textColor="#FACA1A"
+        android:textSize="@dimen/sp_mediumxx"
+        android:visibility="gone"
+        tradiuus:customFont="@string/cond" />
+</RelativeLayout>

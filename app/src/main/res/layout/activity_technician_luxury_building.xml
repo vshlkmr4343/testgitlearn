@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_top_header_contractor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/title_luxury"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072A8"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="LUXURY BUILDING"
+        android:textColor="#25B7D3"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond" />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000">
+
+        <!-- <include
+             layout="@layout/fragment_contractor_myservice"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"/> -->
+    </FrameLayout>
+
+</LinearLayout>

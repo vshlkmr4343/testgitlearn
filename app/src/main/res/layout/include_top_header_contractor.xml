@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_main_color_700"
+    android:padding="@dimen/dp_five">
+
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/contractor_dashboard_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="Back"
+        android:textColor="#FACA1A"
+        android:textSize="@dimen/sp_mediumxx"
+        android:visibility="invisible"
+        tradiuus:customFont="@string/cond" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_five"
+            android:src="@drawable/top_logo" />
+    </LinearLayout>
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/contractor_dashboard_logut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="Logout"
+        android:textColor="#FACA1A"
+        android:textSize="@dimen/sp_mediumxx"
+        android:visibility="visible"
+        tradiuus:customFont="@string/cond" />
+
+    <ImageView
+        android:id="@+id/action_cross"
+        android:layout_width="@dimen/dp_thirty"
+        android:layout_height="@dimen/dp_thirty"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_ten"
+        android:src="@drawable/cross_cion"
+        android:visibility="gone" />
+</RelativeLayout>

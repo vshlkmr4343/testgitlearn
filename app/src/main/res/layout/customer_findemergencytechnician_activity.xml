@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_top_header_contractor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/emergencyimage"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/technician_map"
+            android:layout_width="@dimen/dp_thirty"
+            android:layout_height="@dimen/dp_thirty"
+            android:layout_marginRight="@dimen/dp_ten"
+            android:src="@drawable/map_icon_blue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F86A54"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_twenttfive"
+            android:layout_height="@dimen/dp_twenttfive"
+            android:src="@drawable/emergencyheader" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/emrg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp_ten"
+            android:text="Emergency Details"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond_bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/charges_for_emergency">
+
+            <ListView
+                android:id="@+id/listTechnician"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/md_white_1000"
+                android:fadingEdge="none" />
+
+            <RelativeLayout
+                android:id="@+id/mapLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/charges_for_emergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?colorPrimaryDark"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_five"
+            android:paddingTop="@dimen/dp_eight"
+            android:paddingRight="@dimen/dp_five"
+            android:paddingBottom="@dimen/dp_eight"
+            android:text=""
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_smallxx"
+            tradiuus:customFont="@string/cond" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_main_color_500</item>
+        <item name="colorPrimaryDark">@color/app_main_color_700</item>
+        <item name="colorAccent">@color/md_light_blue_900</item>
+        <item name="colorControlHighlight">@color/md_blue_500_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/app_main_color_500</item>
+
+        <!-- Navigation Drawer Arrow Style. -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+        <!-- Overflow Button Style. -->
+        <!--<item name="actionOverflowButtonStyle">@style/OverflowStyle</item>-->
+
+        <!-- PopupMenu -->
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <!-- CustomVIew -->
+    <declare-styleable name="ViewStyle">
+        <attr name="customFont" format="string" />
+    </declare-styleable>
+
+
+    <!-- PopupMenu -->
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+        <item name="android:textColor">@color/md_light_blue_900</item>
+        <item name="android:textSize">@dimen/sp_smallxx</item>
+    </style>
+
+    <style name="BrandedSwitch.control" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/md_green_500</item>
+        <item name="colorSwitchThumbNormal">@color/md_red_500</item>
+        <item name="trackTint">@color/md_white_1000</item>
+    </style>
+
+    <style name="custom_rating" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">@dimen/dp_fifteen</item>
+        <item name="android:minWidth">@dimen/dp_fifteen</item>
+        <item name="android:progressDrawable">@drawable/rating_bar_bg</item>
+    </style>
+
+</resources>

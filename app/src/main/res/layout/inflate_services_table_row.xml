@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white_1000"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_five"
+        android:paddingTop="@dimen/dp_two"
+        android:paddingRight="@dimen/dp_five"
+        android:paddingBottom="@dimen/dp_two">
+
+        <ImageView
+            android:id="@+id/service_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_eight"
+            android:src="@drawable/checkbox_trade" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/dp_eight"
+            android:text="Switch is Damaged"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_five"
+        android:paddingTop="@dimen/dp_two"
+        android:paddingRight="@dimen/dp_five"
+        android:paddingBottom="@dimen/dp_two">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_eight"
+            android:text="$14 -$28"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_cost_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_eight"
+            android:text="EDIT"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_five"
+        android:paddingTop="@dimen/dp_two"
+        android:paddingRight="@dimen/dp_five"
+        android:paddingBottom="@dimen/dp_two">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_eight"
+            android:text="1h 25m"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_time_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_eight"
+            android:text="EDIT"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond" />
+    </LinearLayout>
+</LinearLayout>

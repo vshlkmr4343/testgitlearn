@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_fifty"
+        android:background="@drawable/dialog_customer_request_rect"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_ten"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/emergency_req"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_twenttfive"
+                    android:layout_height="@dimen/dp_twenttfive"
+                    android:background="@color/md_red_700"
+                    android:padding="@dimen/dp_two"
+                    android:src="@drawable/emergency" />
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="left"
+                    android:padding="@dimen/dp_five"
+                    android:text="Request an Emergency"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_smallxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_five"
+                android:layout_marginBottom="@dimen/dp_five"
+                android:background="@color/md_white_1000" />
+
+            <LinearLayout
+                android:id="@+id/estimate_req"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_twenttfive"
+                    android:layout_height="@dimen/dp_twenttfive"
+                    android:background="@color/md_green_600"
+                    android:padding="@dimen/dp_two"
+                    android:src="@drawable/estimate" />
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="left"
+                    android:padding="@dimen/dp_five"
+                    android:text="Request an Estimate"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_smallxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="@dimen/dp_twenttfive"
+            android:layout_height="@dimen/dp_twenttfive"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cross_cion" />
+
+
+    </RelativeLayout>
+</LinearLayout>

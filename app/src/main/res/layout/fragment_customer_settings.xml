@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <com.tradiuus.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072A8"
+        android:gravity="center"
+        android:padding="@dimen/dp_ten"
+        android:text="SETTINGS"
+        android:textColor="#25B7D3"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_ten"
+                android:drawableLeft="@drawable/cust_changepasswordsettings"
+                android:drawablePadding="@dimen/dp_five"
+                android:gravity="left|center"
+                android:padding="@dimen/dp_five"
+                android:text="Change Password"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_forty"
+                android:layout_marginRight="@dimen/dp_forty"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical">
+
+
+                <com.tradiuus.widgets.CustomEditText
+                    android:id="@+id/setting_edt_old_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_field"
+                    android:gravity="left"
+                    android:hint="Old Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingTop="@dimen/dp_ten"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_ten"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+
+                <com.tradiuus.widgets.CustomDrawableEditText
+                    android:id="@+id/setting_edt_new_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:background="@drawable/text_field"
+                    android:drawableRight="@drawable/question"
+                    android:gravity="left"
+                    android:hint="New Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingTop="@dimen/dp_ten"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_ten"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <com.tradiuus.widgets.CustomEditText
+                    android:id="@+id/setting_edt_conf_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:background="@drawable/text_field"
+                    android:gravity="left"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingTop="@dimen/dp_ten"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_ten"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/setting_btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:background="@drawable/blank_btn"
+                    android:gravity="center"
+                    android:text="SUBMIT"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+            </LinearLayout>
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:layout_marginBottom="@dimen/dp_ten"
+                android:drawableLeft="@drawable/menu_mapannotation_icon"
+                android:drawablePadding="@dimen/dp_five"
+                android:gravity="left|center"
+                android:padding="@dimen/dp_five"
+                android:text="Change Location and Distance"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_forty"
+                android:layout_marginRight="@dimen/dp_forty"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical">
+
+
+                <com.tradiuus.widgets.CustomEditText
+                    android:id="@+id/setting_edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_field"
+                    android:gravity="left"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingTop="@dimen/dp_ten"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_ten"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+
+                <com.tradiuus.widgets.CustomEditText
+                    android:id="@+id/setting_edt_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:background="@drawable/text_field"
+                    android:gravity="left"
+                    android:hint="Pin"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingTop="@dimen/dp_ten"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_ten"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <com.tradiuus.widgets.CustomEditText
+                    android:id="@+id/setting_edt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:background="@drawable/text_field"
+                    android:gravity="left"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingTop="@dimen/dp_ten"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_ten"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_fifteen">
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/live_in_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="Do you live in a"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_light" />
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/customer_sign_spn"
+                        android:layout_width="125dp"
+                        android:layout_height="@dimen/dp_thirtyfive"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_fifteen"
+                        android:background="@drawable/dropdown_small"
+                        android:paddingRight="@dimen/dp_twelve" />
+                </RelativeLayout>
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_ten"
+                    android:gravity="left"
+                    android:text="Set max. distance you prefer to detect a tradesman"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_ten">
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/title_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="1 mi"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_mediumx"
+                        tradiuus:customFont="@string/cond_light" />
+
+                    <android.support.v7.widget.AppCompatSeekBar
+                        android:id="@+id/customer_sign_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/title_min"
+                        android:progress="1"
+                        android:thumb="@drawable/slider_circle" />
+                </RelativeLayout>
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/setting_btn_submit_others"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:background="@drawable/blank_btn"
+                    android:gravity="center"
+                    android:text="SUBMIT"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:onClick="@null">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/myService_trade_btn_next"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#38C7B5"
+            android:drawableLeft="@drawable/signup_icon"
+            android:drawablePadding="@dimen/dp_five"
+            android:gravity="left|center"
+            android:padding="@dimen/dp_five"
+            android:text="Update the Estimate Services"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimaryDark"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_five"
+            android:paddingBottom="@dimen/dp_five">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:padding="@dimen/dp_five"
+                android:text="SEVICES"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:padding="@dimen/dp_five"
+                android:text="PRICE RANGE"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:padding="@dimen/dp_five"
+                android:text="JOB TIME"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond_bold" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/list_emergency"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:scrollbarThumbVertical="@drawable/scrollbar" />
+
+    </LinearLayout>
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/myService_trade_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_forty"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_thirty"
+        android:layout_marginTop="@dimen/dp_five"
+        android:layout_marginRight="@dimen/dp_thirty"
+        android:layout_marginBottom="@dimen/dp_ten"
+        android:background="@drawable/blank_btn"
+        android:gravity="center"
+        android:text="UPDATE"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/sp_mediumx"
+        tradiuus:customFont="@string/cond_light" />
+
+</RelativeLayout>

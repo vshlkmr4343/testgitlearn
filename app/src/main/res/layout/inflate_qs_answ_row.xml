@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.tradiuus.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:padding="@dimen/dp_five"
+        android:text="What's your Emergency condition"
+        android:textColor="?colorPrimaryDark"
+        android:textSize="@dimen/sp_medium"
+        tradiuus:customFont="@string/cond" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_thirtyfive"
+        android:paddingRight="@dimen/dp_thirtyfive"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_five"
+        android:layout_marginTop="@dimen/dp_five"
+        android:layout_marginRight="@dimen/dp_five"
+        android:background="@drawable/icon_drop_down"
+        android:paddingLeft="@dimen/dp_five" />
+</LinearLayout>

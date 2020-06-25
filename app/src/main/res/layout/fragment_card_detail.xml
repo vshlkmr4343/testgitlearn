@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color_700"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/credit_card_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_ten"
+            android:drawableLeft="@drawable/signup_icon"
+            android:drawablePadding="@dimen/dp_five"
+            android:gravity="left|center"
+            android:padding="@dimen/dp_five"
+            android:text="Update Credit Card Info"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_forty"
+            android:paddingRight="@dimen/dp_forty">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Card Details"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/frag_card_info_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="Please enter your card number"
+                android:inputType="number"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/card_detail_exp_date"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_thirtyfive"
+                    android:layout_marginRight="@dimen/dp_two"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/dropdown_small"
+                    android:gravity="left|center_vertical"
+                    android:hint="Expires on"
+                    android:padding="@dimen/dp_five"
+                    android:textSize="@dimen/sp_mediumx" />
+
+                <com.tradiuus.widgets.CustomEditText
+                    android:id="@+id/card_detail_cvv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_two"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/text_field"
+                    android:gravity="left"
+                    android:hint="CVV No."
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:paddingLeft="@dimen/dp_five"
+                    android:paddingTop="@dimen/dp_ten"
+                    android:paddingRight="@dimen/dp_five"
+                    android:paddingBottom="@dimen/dp_ten"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond_light" />
+
+            </LinearLayout>
+
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/card_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:hint="Please enter your name as it appears on the card"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/card_detail_btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="SAVE"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond_light" />
+        </LinearLayout>
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/btn_powered_by_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_sixty"
+            android:background="@drawable/blank_next_btn"
+            android:gravity="center"
+            android:text="Powered by Stripe"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/dp_eight"
+            android:text="Tradiuus charges you a $20 fee for any qualified lead where  you receive a call or sms connection for any emergency or estimate job"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

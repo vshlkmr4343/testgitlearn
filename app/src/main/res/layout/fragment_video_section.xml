@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_forty"
+        android:layout_marginRight="@dimen/dp_forty">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/setting_btn_record"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="Record Video"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_bold" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/setting_btn_play"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_five"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="Play Video"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

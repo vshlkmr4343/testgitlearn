@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color_700"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/company_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_ten"
+            android:drawableLeft="@drawable/signup_icon"
+            android:drawablePadding="@dimen/dp_five"
+            android:gravity="left|center"
+            android:padding="@dimen/dp_five"
+            android:text="Please Fill  Up The Details"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_forty"
+            android:paddingRight="@dimen/dp_forty">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Company Details"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/frg_contractor_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="Company Name"
+                android:inputType="textCapSentences|text"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/frg_contractor_contant_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="Contact Person Name"
+                android:inputType="textCapSentences|text"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.maskededittext.MaskedEditText
+                android:id="@+id/frg_contractor_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                app:mask="(###) ###-####"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/frg_contractor_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="http://www.abc.com"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/customer_trade_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_fifteen"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_forty"
+            android:paddingRight="@dimen/dp_forty">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Create Tradiuus Member ID"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/frg_contractor_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.CustomDrawableEditText
+                android:id="@+id/frg_contractor_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:drawableRight="@drawable/question"
+                android:gravity="left"
+                android:hint="Create Password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/frg_contractor_conf_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_fifteen"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_forty"
+            android:paddingRight="@dimen/dp_forty"
+            android:paddingBottom="@dimen/dp_thirty">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Documentation"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_fifteen">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/live_in_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="Are you Licensed ?"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/frg_contractor_spn_license"
+                    android:layout_width="110dp"
+                    android:layout_height="@dimen/dp_thirtyfive"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/dp_twenty"
+                    android:layout_marginLeft="@dimen/dp_fifteen"
+                    android:background="@drawable/dropdown_small" />
+            </RelativeLayout>
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/frg_contractor_license_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="License Number"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_ten"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_fifteen">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="Insured for GL ? "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/frg_contractor_spn_gl"
+                    android:layout_width="110dp"
+                    android:layout_height="@dimen/dp_thirtyfive"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_fifteen"
+                    android:background="@drawable/dropdown_small" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_fifteen">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:text="@string/workman_comp_insurance"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/frg_contractor_spn_insurance"
+                    android:layout_width="110dp"
+                    android:layout_height="@dimen/dp_thirtyfive"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_fifteen"
+                    android:background="@drawable/dropdown_small" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_forty"
+            android:paddingRight="@dimen/dp_forty"
+            android:paddingBottom="@dimen/dp_twenttfive">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/frg_contractor_btn_cmp_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:background="@drawable/blank_btn"
+                android:gravity="center"
+                android:text="NEXT"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond_light" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white_1000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_five">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.80"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="Kolkata"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond_bold" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_job_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_two"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="Job: Plumbing bathroom"
+            android:textColor="@color/md_red_A200"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond_bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_two"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="Rating: "
+                android:textColor="@color/md_green_A700"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <LinearLayout
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/overall_rating" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/overall_rating" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/overall_rating" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/overall_rating" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/overall_rating" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_job_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_two"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="Job Id: PS03940"
+            android:textColor="@color/md_grey_600"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond_bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:gravity="center"
+        android:padding="@dimen/dp_five"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/check_item"
+            android:layout_width="@dimen/dp_twenty"
+            android:layout_height="@dimen/dp_twenty"
+            android:src="@drawable/selector_checkbox" />
+    </LinearLayout>
+</LinearLayout>

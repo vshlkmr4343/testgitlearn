@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_five"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text="Problem"
+        android:textColor="?colorPrimaryDark"
+        android:textSize="@dimen/sp_medium"
+        tradiuus:customFont="@string/cond_bold" />
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_two"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text="Colgged toilet Bowl"
+        android:textColor="?colorPrimaryDark"
+        android:textSize="@dimen/sp_medium"
+        tradiuus:customFont="@string/cond" />
+</LinearLayout>

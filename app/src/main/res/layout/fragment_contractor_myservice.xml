@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_forty"
+        android:paddingTop="@dimen/dp_forty"
+        android:paddingRight="@dimen/dp_forty"
+        android:paddingBottom="@dimen/dp_twenttfive">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_trade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="Selected Trade: Electrician"
+            android:textColor="#25B7D3"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_btn_update_trade"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_five"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="UPDATE TRADE"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+
+        <com.tradiuus.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_thirty"
+            android:gravity="left|center"
+            android:text="Selected Services:"
+            android:textColor="#25B7D3"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_emergancy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_five"
+            android:gravity="left|center"
+            android:text="Electrician, Electrician, Electrician"
+            android:textColor="#25B7D3"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_btn_update_emergancy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_five"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="UPDATE EMERGENCY REQUESTS"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_thirty"
+            android:gravity="left|center"
+            android:text="Selected Services:"
+            android:textColor="#25B7D3"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_light" />
+        `
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_estimate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_five"
+            android:gravity="left|center"
+            android:text="Selected Trade: Electrician"
+            android:textColor="#25B7D3"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_btn_update_estimate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_five"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="UPDATE ESTIMATE SERVICES"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_response_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_thirty"
+            android:gravity="left|center"
+            android:text="Selected Trade: Electrician"
+            android:textColor="#25B7D3"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_btn_update_response_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_five"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="UPDATE RESPONSE TIME"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_estimate_response_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_thirty"
+            android:gravity="left|center"
+            android:text="Selected Trade: Electrician"
+            android:textColor="#25B7D3"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/contractor_myservice_btn_update_estimate_response_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_marginTop="@dimen/dp_five"
+            android:background="@drawable/blank_btn"
+            android:gravity="center"
+            android:text="UPDATE RESPONSE TIME"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

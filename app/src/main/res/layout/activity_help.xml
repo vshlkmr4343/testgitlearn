@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color_700"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_top_header_contractor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0072A8"
+            android:gravity="center"
+            android:padding="@dimen/dp_ten"
+            android:text="HELP"
+            android:textColor="#25B7D3"
+            android:textSize="@dimen/sp_mediumxx"
+            android:visibility="gone"
+            tradiuus:customFont="@string/cond" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_main_color_700">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/splash_goto"
+                android:background="@color/app_main_color_700">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/indicator"
+                    android:background="@color/app_main_color_700" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_thirtyfive"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    app:ci_drawable="@drawable/blue_indicator" />
+            </RelativeLayout>
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/splash_goto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dp_fifteen"
+                android:text="Go To Tradiuus Home"
+                android:textColor="#0072A8"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

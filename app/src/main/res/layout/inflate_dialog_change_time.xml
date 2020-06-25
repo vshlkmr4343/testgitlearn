@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_thirty"
+        android:background="@drawable/dialog_price_rect"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/dialog_change_editprice_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:padding="@dimen/dp_five"
+            android:text="Estimate Price Range"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_mediumx"
+            tradiuus:customFont="@string/cond" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="@dimen/dp_forty"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_ten"
+                android:gravity="right"
+                android:padding="@dimen/dp_five"
+                android:text="Hr"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/dialog_change_editTimeMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="Hour"
+                android:inputType="number"
+                android:padding="@dimen/dp_five"
+                android:paddingLeft="@dimen/dp_five"
+                android:singleLine="true"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_fifteen"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="@dimen/dp_forty"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_ten"
+                android:gravity="right"
+                android:padding="@dimen/dp_five"
+                android:text="Min"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/dialog_change_editTimeMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:gravity="left"
+                android:hint="Minute"
+                android:inputType="number"
+                android:padding="@dimen/dp_five"
+                android:singleLine="true"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:orientation="horizontal">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/frag_profile_pic_btn_skip"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_thirty"
+                android:layout_margin="@dimen/dp_five"
+                android:layout_weight="0.5"
+                android:background="@drawable/blank_back_btn"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/app_main_color_700"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/frag_profile_pic_btn_proceed"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_thirty"
+                android:layout_margin="@dimen/dp_five"
+                android:layout_weight="0.5"
+                android:background="@drawable/blank_next_btn"
+                android:gravity="center"
+                android:text="Save"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

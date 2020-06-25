@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_fifty"
+        android:layout_marginRight="@dimen/dp_fifty">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_rect"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:text="Review"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond" />
+
+            <LinearLayout
+                android:id="@+id/review_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_marginTop="@dimen/dp_fifteen"
+                android:orientation="horizontal" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/review_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_ten"
+                android:paddingRight="@dimen/dp_five"
+                android:text="NIce Work..."
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/review_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_five"
+                android:paddingTop="@dimen/dp_fifteen"
+                android:paddingRight="@dimen/dp_five"
+                android:text="John Smith"
+                android:textColor="@color/md_blue_A200"
+                android:textSize="@dimen/sp_medium"
+                tradiuus:customFont="@string/cond" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/review_cross"
+            android:layout_width="@dimen/dp_twenttfive"
+            android:layout_height="@dimen/dp_twenttfive"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cross_gray_cion" />
+
+    </RelativeLayout>
+</LinearLayout>

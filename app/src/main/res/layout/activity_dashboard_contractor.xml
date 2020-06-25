@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/welcome_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/include_top_header_contractor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/dp_two"
+                        android:layout_weight="0.5"
+                        android:background="#35ffffff">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_five"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/contractor_dsb_work_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:checked="true"
+                                android:theme="@style/BrandedSwitch.control" />
+
+                            <com.tradiuus.widgets.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Available for Work"
+                                android:textColor="@color/md_light_blue_700"
+                                android:textSize="@dimen/sp_mediumxx"
+                                tradiuus:customFont="@string/cond" />
+                        </LinearLayout>
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/contractor_dsb_username"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text="WELCOME"
+                            android:textColor="@color/md_yellow_A200"
+                            android:textSize="40sp"
+                            tradiuus:customFont="@string/cond" />
+
+                        <com.tradiuus.widgets.CustomTextView
+                            android:id="@+id/contractor_dsb_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="@dimen/dp_five"
+                            android:layout_marginBottom="@dimen/dp_fifteen"
+                            android:gravity="center"
+                            android:text="Overall Rating"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="@dimen/sp_largex"
+                            tradiuus:customFont="@string/cond_bold" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#95000000"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_five"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.tradiuus.widgets.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center"
+                                    android:padding="@dimen/dp_five"
+                                    android:text="Overall Rating"
+                                    android:textColor="#25B7D3"
+                                    android:textSize="@dimen/sp_mediumxx"
+                                    tradiuus:customFont="@string/cond" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_twenty"
+                                    android:layout_height="@dimen/dp_twenty"
+                                    android:layout_margin="@dimen/dp_five"
+                                    android:src="@drawable/overall_rating" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_twenty"
+                                    android:layout_height="@dimen/dp_twenty"
+                                    android:src="@drawable/overall_rating" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_twenty"
+                                    android:layout_height="@dimen/dp_twenty"
+                                    android:src="@drawable/overall_rating" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_twenty"
+                                    android:layout_height="@dimen/dp_twenty"
+                                    android:src="@drawable/overall_rating" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_twenty"
+                                    android:layout_height="@dimen/dp_twenty"
+                                    android:src="@drawable/overall_rating" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.5">
+
+                                <ImageView
+                                    android:id="@+id/contractor_dash_btn_emergency"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/dp_five"
+                                    android:layout_weight="0.3"
+                                    android:padding="@dimen/dp_two"
+                                    android:src="@drawable/emergency_icon" />
+
+                                <ImageView
+                                    android:id="@+id/contractor_dash_btn_estimate"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/dp_five"
+                                    android:layout_weight="0.3"
+                                    android:padding="@dimen/dp_two"
+                                    android:src="@drawable/estimate_icon" />
+
+                                <ImageView
+                                    android:id="@+id/contractor_dash_btn_luxury"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/dp_five"
+                                    android:layout_weight="0.3"
+                                    android:padding="@dimen/dp_two"
+                                    android:src="@drawable/luxury_icon" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.5">
+
+                                <ImageView
+                                    android:id="@+id/contractor_dash_btn_myservices"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/dp_five"
+                                    android:layout_weight="0.3"
+                                    android:padding="@dimen/dp_two"
+                                    android:src="@drawable/services_icon" />
+
+                                <ImageView
+                                    android:id="@+id/contractor_dash_btn_myprofile"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/dp_five"
+                                    android:layout_weight="0.3"
+                                    android:padding="@dimen/dp_two"
+                                    android:src="@drawable/profile_icon" />
+
+                                <ImageView
+                                    android:id="@+id/contractor_dash_btn_settings"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/dp_five"
+                                    android:layout_weight="0.3"
+                                    android:padding="@dimen/dp_two"
+                                    android:src="@drawable/settings_icon" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_imp"
+        layout="@layout/inflate_contractor_important"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+</RelativeLayout>

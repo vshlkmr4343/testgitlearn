@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_two">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_sq_check_deselected"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_five">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_thirty">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/technician_no"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_two"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/dp_two"
+                android:text="Technician: 1"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/btn_posetive"
+                android:layout_width="@dimen/dp_forty"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_five"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="30sp"
+                tradiuus:customFont="@string/cond_light" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/edt_technician_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_marginRight="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:gravity="left|center_vertical"
+                android:hint="Technician's Name "
+                android:inputType="text"
+                android:padding="@dimen/dp_five"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.maskededittext.MaskedEditText
+                android:id="@+id/edt_technician_phno"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_marginTop="@dimen/dp_five"
+                android:layout_marginRight="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:gravity="left|center_vertical"
+                android:hint="Mobile No. "
+                android:inputType="phone"
+                android:padding="@dimen/dp_five"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_mediumx"
+                app:mask="(###)###-####"
+                tradiuus:customFont="@string/cond_light" />
+
+            <com.tradiuus.widgets.CustomEditText
+                android:id="@+id/edt_technician_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:layout_marginTop="@dimen/dp_five"
+                android:layout_marginRight="@dimen/dp_five"
+                android:background="@drawable/text_field"
+                android:gravity="left|center_vertical"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dp_five"
+                android:textColor="?colorPrimaryDark"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_light" />
+
+            <LinearLayout
+                android:id="@+id/bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/btn_modify"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_forty"
+                    android:layout_margin="@dimen/dp_eight"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/ic_btn_bg"
+                    android:gravity="center"
+                    android:text="MODIFY"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/btn_remove"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_forty"
+                    android:layout_margin="@dimen/dp_eight"
+                    android:layout_marginTop="@dimen/dp_five"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/ic_btn_bg_pink"
+                    android:gravity="center"
+                    android:text="REMOVE"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_forty"
+                    android:layout_margin="@dimen/dp_five"
+                    android:background="@drawable/ic_btn_bg"
+                    android:gravity="center"
+                    android:text="ADD"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/sp_mediumxx"
+                    android:visibility="gone"
+                    tradiuus:customFont="@string/cond_light" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

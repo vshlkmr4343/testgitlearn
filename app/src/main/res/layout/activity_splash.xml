@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color_700"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/splash_goto"
+            android:background="@color/app_main_color_700">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/indicator"
+                android:background="@color/app_main_color_700" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_thirtyfive"
+                android:layout_alignParentBottom="true"
+                app:ci_drawable="@drawable/blue_indicator"
+                android:layout_gravity="bottom" />
+        </RelativeLayout>
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/splash_goto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dp_fifteen"
+            android:text="Go To Tradiuus Home"
+            android:textColor="#0072A8"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond" />
+
+    </RelativeLayout>
+
+</LinearLayout>

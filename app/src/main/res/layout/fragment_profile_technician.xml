@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/image_upload_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/signup_icon"
+        android:drawablePadding="@dimen/dp_five"
+        android:gravity="left|center"
+        android:padding="@dimen/dp_five"
+        android:text="Update Technicians Details"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond_bold" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_thirty"
+            android:paddingTop="@dimen/dp_twelve"
+            android:paddingRight="@dimen/dp_thirty">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingTop="@dimen/dp_five"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_five"
+                android:text="Tell Us About Your Technicians"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond_bold" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingTop="@dimen/dp_five"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_five"
+                android:text="Max number of Technicians"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_marginTop="@dimen/dp_five"
+                android:layout_marginBottom="@dimen/dp_ten"
+                android:background="@drawable/text_field">
+
+
+                <RelativeLayout
+                    android:id="@+id/btn_negetive"
+                    android:layout_width="@dimen/dp_forty"
+                    android:layout_height="@dimen/dp_forty"
+                    android:background="@drawable/p_button_bg">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/baseline_remove_24" />
+                </RelativeLayout>
+
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/edit_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btn_posetive"
+                    android:layout_toRightOf="@+id/btn_negetive"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="?colorPrimaryDark"
+                    android:textSize="@dimen/sp_mediumxx"
+                    tradiuus:customFont="@string/cond_light" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_posetive"
+                    android:layout_width="@dimen/dp_forty"
+                    android:layout_height="@dimen/dp_forty"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/p_button_bg">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/baseline_add_24" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingTop="@dimen/dp_five"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_five"
+                android:text="How you conduct background check on your technicians?"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/bcg_check"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_forty"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_drop_down"
+                android:paddingLeft="@dimen/dp_eighty" />
+
+            <com.tradiuus.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_five"
+                android:gravity="left|center_vertical"
+                android:paddingTop="@dimen/dp_five"
+                android:paddingRight="@dimen/dp_five"
+                android:paddingBottom="@dimen/dp_five"
+                android:text="Details of the Technicians"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumx"
+                tradiuus:customFont="@string/cond" />
+
+
+            <com.tradiuus.widgets.ExpandableHeightListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none">
+
+            </com.tradiuus.widgets.ExpandableHeightListView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
+
+

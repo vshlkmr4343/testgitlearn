@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_color_700">
+
+
+    <com.tradiuus.widgets.CustomTextView
+        android:id="@+id/spl_frag_top_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dp_thirtyfive"
+        android:gravity="center"
+        android:padding="@dimen/dp_five"
+        android:text="WELCOME TO TRADIUUS"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond" />
+
+    <com.tradiuus.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spl_frag_top_text"
+        android:gravity="center"
+        android:padding="@dimen/dp_fifteen"
+        android:text="TRADIUUS IS AN APP THAT CONNECTS YOU IN REALTIME WITH TRADE CONTRACTORS ACTIVITY WITHIN YOUR RADIUS"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/sp_mediumxx"
+        tradiuus:customFont="@string/cond_light" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spl_frag_bottom_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_fifteen"
+        android:src="@drawable/welcome_bottom_icon" />
+
+    <ImageView
+        android:id="@+id/spl_frag_bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_thirtyfive"
+        android:src="@drawable/welcome_bottom_logo" />
+
+</RelativeLayout>

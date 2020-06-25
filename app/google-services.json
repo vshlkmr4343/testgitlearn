@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "695819416704",
+    "firebase_url": "https://tradiuus-android.firebaseio.com",
+    "project_id": "tradiuus-android",
+    "storage_bucket": "tradiuus-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695819416704:android:b20060de1e3d067340e265",
+        "android_client_info": {
+          "package_name": "com.tradiuus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695819416704-h217n52r9p08fennnq2d0hhvv12dn2rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tradiuus",
+            "certificate_hash": "eb8007f17e4f8050b42bf065f717159ce8f7ad3a"
+          }
+        },
+        {
+          "client_id": "695819416704-h0v796panovqup8iknkhl89msf54gfsq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo2p8IuMTQMgyVxu2LqUeEivLRcN3IqRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695819416704-h0v796panovqup8iknkhl89msf54gfsq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white_1000"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_five">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.65"
+        android:orientation="vertical">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="Kolkata"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond_bold" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_estimated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_two"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="Estimated service: Plumber for bath renovation"
+            android:textColor="#38C7B5"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond_bold" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_job_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_two"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="Job Id: PS03940"
+            android:textColor="@color/md_grey_600"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond_bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rating_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/service_time_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_two"
+            android:gravity="right"
+            android:maxLines="1"
+            android:text="2 days"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="@dimen/sp_medium"
+            tradiuus:customFont="@string/cond" />
+    </LinearLayout>
+</LinearLayout>

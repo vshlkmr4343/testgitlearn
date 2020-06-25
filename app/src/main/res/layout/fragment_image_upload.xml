@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tradiuus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.tradiuus.widgets.CustomTextView
+                android:id="@+id/image_upload_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_ten"
+                android:drawableLeft="@drawable/signup_icon"
+                android:drawablePadding="@dimen/dp_five"
+                android:gravity="left|center"
+                android:padding="@dimen/dp_five"
+                android:text="Please Fill  Up The Details"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_mediumxx"
+                tradiuus:customFont="@string/cond" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/text_img1_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_five"
+                    android:text="Upload Image of General Insurance"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_sixty"
+                    android:layout_height="@dimen/dp_sixty">
+
+                    <ImageView
+                        android:id="@+id/image_general_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_image" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/edit_general_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/md_light_blue_600"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_two"
+                        android:text="Edit"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/sp_smallxx"
+                        android:visibility="gone"
+                        tradiuus:customFont="@string/cond" />
+                </RelativeLayout>
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/text_img1_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_five"
+                    android:text="*Please show all limits"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_medium"
+                    tradiuus:customFont="@string/cond" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/text_img2_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_five"
+                    android:text="Upload Image of Trade License"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_sixty"
+                    android:layout_height="@dimen/dp_sixty">
+
+
+                    <ImageView
+                        android:id="@+id/image_general_license"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_image" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/edit_trade_license"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/md_light_blue_600"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_two"
+                        android:text="Edit"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/sp_smallxx"
+                        android:visibility="gone"
+                        tradiuus:customFont="@string/cond" />
+                </RelativeLayout>
+
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/text_img2_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_five"
+                    android:text="*Please show full document and expiration date"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_medium"
+                    tradiuus:customFont="@string/cond" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.tradiuus.widgets.CustomTextView
+                    android:id="@+id/text_img3_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_five"
+                    android:text="Upload your company Logo"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_mediumx"
+                    tradiuus:customFont="@string/cond" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_sixty"
+                    android:layout_height="@dimen/dp_sixty">
+
+                    <ImageView
+                        android:id="@+id/image_general_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_image" />
+
+                    <com.tradiuus.widgets.CustomTextView
+                        android:id="@+id/edit_company_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/md_light_blue_600"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_two"
+                        android:text="Edit"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/sp_smallxx"
+                        android:visibility="gone"
+                        tradiuus:customFont="@string/cond" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/frag_imageupload_btn_back"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_margin="@dimen/dp_eight"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_weight="0.5"
+            android:background="@drawable/blank_back_btn"
+            android:gravity="center"
+            android:text="BACK"
+            android:textColor="@color/app_main_color_700"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/frag_imageupload_btn_proceed"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_margin="@dimen/dp_eight"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_weight="0.5"
+            android:background="@drawable/blank_next_btn"
+            android:gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            tradiuus:customFont="@string/cond_light" />
+
+        <com.tradiuus.widgets.CustomTextView
+            android:id="@+id/frag_imageupload_btn_update"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_forty"
+            android:layout_margin="@dimen/dp_eight"
+            android:layout_marginTop="@dimen/dp_five"
+            android:layout_weight="0.5"
+            android:background="@drawable/blank_next_btn"
+            android:gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/sp_mediumxx"
+            android:visibility="gone"
+            tradiuus:customFont="@string/cond_light" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+
