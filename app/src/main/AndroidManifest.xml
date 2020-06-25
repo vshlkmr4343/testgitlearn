@@ -27,7 +27,6 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -39,7 +38,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-
         <service
             android:name=".network.GPSTracker"
             android:enabled="true" />
@@ -47,7 +45,6 @@
             android:name=".network.FindTechnicians"
             android:enabled="true"
             android:exported="true" />
-
         <!-- Google Notification -->
         <service
             android:name=".notification.MyFirebaseMessagingService"
@@ -57,18 +54,15 @@
             </intent-filter>
         </service>
         <!-- Google Notification -->
-
         <activity
             android:name=".activities.LoginActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".activities.CustomerSignupActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.ContractorSignupActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".activities.CustomerDashboardActivity"
             android:screenOrientation="portrait" />
